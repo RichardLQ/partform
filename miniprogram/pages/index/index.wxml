@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="index-user">
+        <t-sticky>
+            <view class="user-item">
+                <view class="user-pic">
+                <view class="demo-section__wrapper">
+                <t-cell
+                    title="龙猫兼职"
+                    description="龙猫兼职是为现代人提供的寻找兼职的一个平台"
+                    align="top"
+                    image="https://tdesign.gtimg.com/mobile/%E5%9B%BE%E7%89%87.png"
+                />
+            </view>
+            </view>
+            </view>
+        </t-sticky>
+    </view>
+
+    <t-divider content="火热兼职信息列表" />
+
+    <t-pull-down-refresh
+    loadingProps="{{loadingProps}}"
+    t-class-indicator="indicator-blue"
+    refreshTimeout="2000"
+    loadingTexts="{{['继续拉哦', '该松手啦', '努力刷新中', '完成~']}}"
+    bind:timeout="handleTimeout"
+    >
+    <view class="pulldown-reflesh__content">
+        <t-skeleton rowCol="{{rowCol}}" t-class="external-class" t-class-col="external-class-col" loading></t-skeleton>
+        <view class="index-list" wx:for="{{partList}}" wx:key="index"  data-index="{{item.id}}">
+            <view class="list-item">
+                <view class="list-title">
+                <view class="title-content">
+                    {{item.title}} 
+                </view> 
+            </view>
+            <view class="list-price">
+                <span class="price-icon">￥</span> <span>{{item.price}}</span>/<span>{{item.unit}}</span>
+            </view>
+            </view>
+            <view class="list-content">
+                <view class="content-view">
+                    {{item.content}} 
+                </view>
+                <view>
+                    <view class="block">
+                        <t-tag class="tag" wx:for="{{item.tags}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    </t-pull-down-refresh>
+
+    <view class="demo-footer">
+        <t-divider content="我也是有底线的" />
+    <t-footer theme="text" copyright="{{copyright}}"></t-footer>
+    </view>
+</view>

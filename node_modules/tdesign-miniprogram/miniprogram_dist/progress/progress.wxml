@@ -1,0 +1,24 @@
+<view style="{{ customStyle }}" class="{{ classPrefix }} {{classPrefix}}--status--{{status || computedStatus}}">
+  <view class="{{ classPrefix }}__inner {{prefix}}-class">
+    <view
+      aria-role="progressbar"
+      role="progressbar"
+      aria-valuenow="{{computedProgress}}"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-label="{{ ariaLabel }}"
+      aria-labelledby="{{ ariaLabelledby }}"
+      aria-describedby="{{ ariaDescribedby }}"
+      aria-busy="{{ ariaBusy }}"
+      class="{{ classPrefix }}__bar {{prefix}}-class-bar"
+      style="height: {{ heightBar }}; background: {{ trackColor }}"
+    >
+      <view class="{{ classPrefix }}__bar-percent" style="background:{{ colorBar }}; width:{{ computedProgress + '%'}}">
+      </view>
+    </view>
+    <view wx:if="{{ label }}" class="{{ classPrefix }}__label {{prefix}}-class-label">
+      {{ computedProgress + '%' }}
+    </view>
+    <slot name="label"></slot>
+  </view>
+</view>

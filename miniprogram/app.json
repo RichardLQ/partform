@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/my/my",
+        "pages/cart/cart"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "selectedColor": "#e1c0b1",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/static/images/shouye.png",
+                "selectedIconPath": "/static/images/shouye_active.png"
+            },
+            {
+                "pagePath": "pages/cart/cart",
+                "text": "分类",
+                "iconPath": "/static/images/fenlei.png",
+                "selectedIconPath": "/static/images/fenlei_active.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "/static/images/wode.png",
+                "selectedIconPath": "/static/images/wode_active.png"
+            }
+        ]
+    },
+    "lazyCodeLoading": "requiredComponents"
+}

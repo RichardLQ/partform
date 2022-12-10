@@ -1,0 +1,18 @@
+{
+    "usingComponents": {
+        "t-dropdown-menu": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
+        "t-dropdown-item": "tdesign-miniprogram/dropdown-menu/dropdown-item",
+        "t-cell": "tdesign-miniprogram/cell/cell",
+        "t-icon": "tdesign-miniprogram/icon/icon",
+        "t-divider": "tdesign-miniprogram/divider/divider",
+        "t-sticky": "tdesign-miniprogram/sticky/sticky",
+        "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
+        "t-tag": "tdesign-miniprogram/tag/tag",
+        "t-search": "tdesign-miniprogram/search/search"
+    },
+    "enablePullDownRefresh":false,
+    "navigationBarTitleText": "信息列表",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f6f6"
+}

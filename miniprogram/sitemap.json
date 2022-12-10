@@ -1,0 +1,7 @@
+{
+  "desc": "关于本文件的更多信息，请参考文档 https://tdesign.tencent.com/miniprogram/components/back-top",
+  "rules": [{
+  "action": "allow",
+  "page": "*"
+  }]
+}
