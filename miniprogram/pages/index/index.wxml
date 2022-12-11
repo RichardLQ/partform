@@ -46,6 +46,9 @@
                 <view>
                     <view class="block">
                         <t-tag class="tag" wx:for="{{item.tags}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
+                        <view class="index-time" >
+                            2022-12-11 12:12:34 
+                        </view>
                     </view>
                 </view>
             </view>

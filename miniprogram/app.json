@@ -1,8 +1,10 @@
 {
     "pages": [
+        "pages/detail/detail",
         "pages/index/index",
         "pages/my/my",
-        "pages/cart/cart"
+        "pages/cart/cart",
+        "pages/errs/errs"
     ],
     "window": {
         "backgroundTextStyle": "light",

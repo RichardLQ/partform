@@ -1,56 +1,48 @@
 <view class="container">
-    
-<view class="header-container">
-   <view class="header-select">
-    <t-dropdown-menu>
-        <t-dropdown-item
-            label="地点选择"
-            optionsLayout="tree"
-            options="{{doubleColumnsTree.options}}"
-            value="{{doubleColumnsTree.value}}"
-            bindchange="handleTreeSelect"
-            confirm="confirmSelect"
-        />
-    </t-dropdown-menu>
-   </view>
-   <view class="header-title">
-       <view class="title-name">
-        <t-search value="{{value}}" placeholder="搜索" bind:change="onChange" />
-       </view>
-   </view>
-</view>
-    
-<t-pull-down-refresh
-    loadingProps="{{loadingProps}}"
-    t-class-indicator="indicator-blue"
-    refreshTimeout="2000"
-    loadingTexts="{{['继续拉哦', '该松手啦', '努力刷新中', '完成~']}}"
-    bind:timeout="handleTimeout"
-    >      
-    <view class="pulldown-reflesh__content">
-        <t-skeleton rowCol="{{rowCol}}" t-class="external-class" t-class-col="external-class-col" loading></t-skeleton>
-        <view class="index-list" wx:for="{{partList}}" wx:key="index"  data-index="{{item.id}}">
-            <view class="list-item">
-                <view class="list-title">
-                <view class="title-content">
-                    {{item.title}} 
-                </view> 
-            </view>
-            <view class="list-price">
-                <span class="price-icon">￥</span> <span>{{item.price}}</span>/<span>{{item.unit}}</span>
-            </view>
-            </view>
-            <view class="list-content">
-                <view class="content-view">
-                    {{item.content}} 
-                </view>
-                <view>
-                    <view class="block">
-                        <t-tag class="tag" wx:for="{{item.tags}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
-                    </view>
-                </view>
+
+
+    <view class="header-container">
+        <view class="header-select">
+            <t-dropdown-menu>
+                <t-dropdown-item label="地点选择" optionsLayout="tree" options="{{doubleColumnsTree.options}}" value="{{doubleColumnsTree.value}}" bindchange="handleTreeSelect" confirm="confirmSelect" />
+            </t-dropdown-menu>
+        </view>
+        <view class="header-title">
+            <view class="title-name">
+                <t-search value="{{value}}" placeholder="搜索" bind:change="onChange" />
             </view>
         </view>
     </view>
-    </t-pull-down-refresh>
+
+    <!-- <t-pull-down-refresh loadingProps="{{loadingProps}}" t-class-indicator="indicator-blue" refreshTimeout="2000" loadingTexts="{{['继续拉哦', '该松手啦', '努力刷新中', '完成~']}}" bind:timeout="handleTimeout">
+        <view class="pulldown-reflesh__content">
+            <t-skeleton rowCol="{{rowCol}}" t-class="external-class" t-class-col="external-class-col" loading></t-skeleton> -->
+            <view class="content-item">
+                <view class="index-list" wx:for="{{partList}}" wx:key="index" data-index="{{item.id}}">
+                    <view class="list-item">
+                        <view class="list-title">
+                            <view class="title-content">
+                                {{item.title}}
+                            </view>
+                        </view>
+                        <view class="list-price">
+                            <span class="price-icon">￥</span> <span>{{item.price}}</span>/<span>{{item.unit}}</span>
+                        </view>
+                    </view>
+                    <view class="list-content">
+                        <view class="content-view">
+                            {{item.content}}
+                        </view>
+                        <view>
+                            <view class="block">
+                                <t-tag class="tag" wx:for="{{item.tags}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <t-back-top  wx:if="{{backTop==true}}" theme="{{backTopTheme}}" text="{{backTopText}}" ></t-back-top>
+            </view> 
+        <!-- </view>
+    </t-pull-down-refresh> -->
+    <!-- <t-back-top theme="{{backTopTheme}}" text="{{backTopText}}" bind:to-top="onToTop"></t-back-top> -->
 </view>

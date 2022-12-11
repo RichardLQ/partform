@@ -1,4 +1,5 @@
 {
+    "component": true,
     "usingComponents": {
         "t-dropdown-menu": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
         "t-dropdown-item": "tdesign-miniprogram/dropdown-menu/dropdown-item",
@@ -8,7 +9,8 @@
         "t-sticky": "tdesign-miniprogram/sticky/sticky",
         "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
         "t-tag": "tdesign-miniprogram/tag/tag",
-        "t-search": "tdesign-miniprogram/search/search"
+        "t-search": "tdesign-miniprogram/search/search",
+        "t-back-top": "tdesign-miniprogram/back-top/back-top"
     },
     "enablePullDownRefresh":false,
     "navigationBarTitleText": "信息列表",

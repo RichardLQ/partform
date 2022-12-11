@@ -89,15 +89,24 @@ Page({
   },
   getList(){
   },
-  getUserProfile() {
-  },
+  
   handleTimeout() {
     wx.showToast({
       title: '刷新成功',
       icon: 'success',
     });
   },
-  getUserInfo(e: any) {
-    
-  }
+  onShareAppMessage(){
+    return {
+        title: '单页面分享',
+        path: "",
+        imageUrl:"https://api.vvhan.com/api/acgimg",
+    } 
+  },
+  onShareTimeline: function () {
+    return {
+    title: "龙猫兼职",
+    imageUrl: "https://api.vvhan.com/api/acgimg"
+    }
+    },
 })

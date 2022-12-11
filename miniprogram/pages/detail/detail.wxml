@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="detail-header">
+        <view class="header-title">
+            <view class="title-content">
+                抖音直播充场
+            </view>
+            <view class="title-price">
+                30元/小时
+            </view>
+        </view>
+        <view class="header-tag">
+            <view class="block">
+                <t-tag class="block-tag" theme="primary">日结</t-tag>
+                <t-tag class="block-tag" theme="primary">男女不限</t-tag>
+            </view>
+        </view>
+        <view class="header-update">
+            <view class="update-browsing">
+                <view class="browsing-icon">
+                    <t-icon name="browse" size="48rpx" data-name="browse"/>
+                </view>
+                <view class="browsing-text">
+                    <span>677</span>人浏览
+                </view>
+                <view class="browsing-time">
+                    更新时间:<span>2022-12-08 14:12:56</span>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="detail-address">
+        asdfasdf
+    </view>
+</view>
