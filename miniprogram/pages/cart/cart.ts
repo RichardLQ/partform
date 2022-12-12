@@ -179,6 +179,11 @@
           'doubleColumnsTree.value': e.detail.value,
         });   
       },
+      handleClick(){
+        wx.navigateTo({
+            url: "/pages/detail/detail",
+          })
+    },
       onToTop(e:any) {
         console.log('backToTop', e);
       }, 
