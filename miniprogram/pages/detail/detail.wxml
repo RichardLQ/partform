@@ -29,6 +29,52 @@
         </view>
     </view>
     <view class="detail-address">
-        asdfasdf
+        <view class="address-item">
+            <view class="item-line"></view>
+            <view class="item-name">工作地点</view>
+            <view class="item-small">(点击可一键复制)</view>
+        </view>
+        <view class="address-detail">
+            大鹏新区啊
+        </view>
+    </view>
+    <view class="detail-address">
+        <view class="address-item">
+            <view class="item-line"></view>
+            <view class="item-name">工作详情</view>
+        </view>
+        <view class="address-detail">  
+            <text class="detail-text">
+                将商家指定的信息复制粘贴到朋友圈即可，操作简单，两分钟即可
+                工作过要求 
+                1、下午13:00到晚上2：00时间自由
+                2、通过位置测试才能做任务微信近期没有被封号过
+                3、不限时间和地点
+                薪资待遇
+                10-50/h(每天可做)
+                一小时一结
+            </text>
+        </view>
+    </view>
+    <view class="detail-source">
+        <view class="source-icon">
+            <t-icon name="internet" size="48rpx" data-name="internet"/>
+        </view>
+        <view class="source-text">
+            <span class="text-title">信息来源</span><span class="text-value">：商家发布</span>
+        </view>
+    </view>
+    <view class="detail-notify">
+        <view class="detail-notifys">
+            <view class="notify-icon">
+            <t-icon name="notification" size="48rpx" data-name="notification"/>
+            </view>
+            <view class="notify-text">
+                <span class="text-title">
+                龙猫兼职提醒您：在招聘，录用期间以任何理由索要财务，扣押证件，均属违法行为，请您提高警惕
+                </span>
+            </view>
+        </view>
+       <view class="detail-tis">添加商家联系信息未通过可能是商家正忙或人员已招满！</view>
     </view>
 </view>
