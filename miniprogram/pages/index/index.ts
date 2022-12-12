@@ -89,7 +89,11 @@ Page({
   },
   getList(){
   },
-  
+  handleClick(){
+    wx.navigateTo({
+        url: "/pages/detail/detail",
+      })
+},
   handleTimeout() {
     wx.showToast({
       title: '刷新成功',

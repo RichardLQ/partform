@@ -2,7 +2,9 @@
     "usingComponents": {
         "t-tag": "tdesign-miniprogram/tag/tag",
         "t-check-tag": "tdesign-miniprogram/tag/check-tag",
-        "t-icon": "tdesign-miniprogram/icon/icon"
+        "t-icon": "tdesign-miniprogram/icon/icon",
+        "t-button": "tdesign-miniprogram/button/button",
+        "t-dialog": "tdesign-miniprogram/dialog/dialog"
     },
     "enablePullDownRefresh":false,
     "navigationBarTitleText": "详情",

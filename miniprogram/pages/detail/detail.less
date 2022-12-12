@@ -10,6 +10,7 @@
             font-weight: 900;
             .title-content{
                 flex: 6;
+                padding-left: 15rpx;
             }
             .title-price{
                 color: red;
@@ -118,6 +119,29 @@
         .detail-tis{
             padding: 14rpx 10rpx 10rpx 30rpx;
             font-size: 25rpx;
+        }
+    }
+    .detail-footer{
+        position: absolute;
+      bottom: 0;
+      left: 0;right: 0;
+      margin: 0;
+    }
+    .dialog-content{
+        .content-image{
+            display: flex;
+            margin-top: 15rpx;
+            .image-icon{
+                color: #0052d9;
+            }
+            .image-title{
+                flex: 1;
+            }
+        }
+        button:not([size=mini]){
+            width: 150rpx !important;
+            height: 46rpx;
+            font-size: 30rpx;
         }
     }
 }

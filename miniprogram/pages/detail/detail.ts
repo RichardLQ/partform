@@ -1,17 +1,23 @@
-// pages/detail/detail.ts
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        dialogKey: '',
+        showWithInput: false,
     },
-
+    
+    showDialog(e:any) {
+        this.setData({showWithInput: true});
+      },
+    closeDialog() {
+        this.setData({showWithInput: false});
+      },
     /**
      * 生命周期函数--监听页面加载
-     */
-    onLoad() {
+     */ 
+    onLoad() { 
 
     },
 

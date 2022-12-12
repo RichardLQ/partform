@@ -1,9 +1,10 @@
 {
     "pages": [
-        "pages/detail/detail",
+       
         "pages/index/index",
         "pages/my/my",
         "pages/cart/cart",
+        "pages/detail/detail",
         "pages/errs/errs"
     ],
     "window": {
