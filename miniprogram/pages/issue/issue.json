@@ -1,0 +1,13 @@
+{
+    "usingComponents": {
+        "t-input": "tdesign-miniprogram/input/input",
+        "t-textarea": "tdesign-miniprogram/textarea/textarea",
+        "t-button": "tdesign-miniprogram/button/button",
+        "t-check-tag": "tdesign-miniprogram/tag/check-tag"
+    },
+    "enablePullDownRefresh":false,
+    "navigationBarTitleText": "发布帖子",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f6f6"
+}

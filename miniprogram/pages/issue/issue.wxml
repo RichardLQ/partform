@@ -1,0 +1,26 @@
+<view class="container">
+    <t-input label="标题" placeholder="请输入文字"></t-input>
+    <t-input label="地址" placeholder="不填默不限地点"></t-input>
+    <view class="issue-tag">
+        <t-check-tag size="large" variant="{{item}}">日结</t-check-tag>
+        <t-check-tag checked size="large" variant="{{item}}">月结</t-check-tag>
+        <t-check-tag size="large" variant="{{item}}">商议结算</t-check-tag>
+        <t-check-tag checked size="large" variant="{{item}}">男女不限</t-check-tag>
+        <t-check-tag size="large" variant="{{item}}">仅限女生</t-check-tag>
+        <t-check-tag size="large" variant="{{item}}">仅限男生</t-check-tag>
+        <t-check-tag size="large" variant="{{item}}">线上兼职</t-check-tag>
+        <t-check-tag size="large" variant="{{item}}">完工结</t-check-tag>
+    </view>
+    <t-textarea label="工作详情" placeholder="请输入文字" maxcharacter="200" indicator />
+    <t-input
+    label="价格"
+    placeholder="0.00"
+    suffix="元/小时"
+    align="right"
+    bindchange="onPriceInput"
+    value="{{price}}"
+    tips="{{priceError ? '请输入正确的价格' : ''}}"
+    t-class-tips="tips"
+    />
+    <t-button theme="primary" block size="large" bindtap="handleClick">提交</t-button>
+</view>

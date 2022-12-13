@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="success-page">
+        <t-result theme="success" title="请求成功" description="提交成功" />
+        <t-button size="large" theme="primary" bindtap="handleClick" block variant="outline">返回</t-button>
+    </view>
+  </view>

@@ -8,6 +8,9 @@
       <image src="{{users.avatarUrl}}" style="width: 100%; background-color: #eeeeee;z-index: 100;"></image>
       <view>{{users.nickName}}</view>
     </block>
+    <view class="user-vip">
+        会员到期日：<span>2022-12-13 13:14:43</span>
+    </view>
   </view>
   <view class="my_foot">
     <view class="foot-container">
@@ -20,10 +23,10 @@
           <i class="iconfont icon-caozuo-dianzan"></i>
           <view>我的点赞</view>
         </view>
-        <view class="cross-label">
+        <!-- <view class="cross-label">
           <i class="iconfont icon-fenzu"></i>
           <view>我的收藏</view>
-        </view>
+        </view> -->
         <view class="cross-label" bindtap="aboutUs">
           <i class="iconfont icon-shezhi"></i>
           <view>关于我们</view>
@@ -31,19 +34,23 @@
       </view>
     </view>
     <view class="foot-about">
-     <view class="about-us" bindtap="aboutUs">
+    <view class="about-us" bindtap="handleClick">
+      发布兼职
+      <i class="iconfont icon-more"></i>
+     </view>
+     <view class="about-us" bind:tap="aboutUs">
       关于我们
       <i class="iconfont icon-more"></i>
      </view>
-     <view class="about-us" bindtap="complaints">
+     <!-- <view class="about-us" bindtap="complaints">
       意见反馈
       <i class="iconfont icon-more"></i>
-     </view>
-     <view class="about-us" bindtap="contactUs">
+     </view> -->
+     <view class="about-us" bind:tap="contactUs">
       联系客服
       <i class="iconfont icon-more"></i>
      </view>
-     <view class="about-us" bindtap="newVersion">
+     <view class="about-us" bind:tap="newVersion">
       上新提醒
       <i class="iconfont icon-more"></i>
      </view>
@@ -53,4 +60,25 @@
      </view> -->
     </view>
   </view>
+  <t-dialog
+    visible="{{dialogAboutUs}}"
+    title="关于我们"
+    content="龙猫兼职提供安全、丰富的全职与兼职工作信息，并通过产品创新与服务保障，帮助求职者快速找到合适岗位"
+    confirm-btn="我知道了"
+    bind:confirm="closeUs"
+  />
+  <t-dialog
+    visible="{{dialogContactUs}}"
+    title="联系我们"
+    content="18004084827"
+    confirm-btn="我知道了"
+    bind:confirm="closeContac"
+  />
+  <t-dialog
+    visible="{{dialogNewVersion}}"
+    title="新上线功能"
+    content="我们又上新了新的兼职信息哦"
+    confirm-btn="我知道了"
+    bind:confirm="closeVersion"
+  />
 </view>

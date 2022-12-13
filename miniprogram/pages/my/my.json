@@ -1,5 +1,7 @@
 {
-    "usingComponents": {},
+    "usingComponents": {
+        "t-dialog": "tdesign-miniprogram/dialog/dialog"
+    },
     "enablePullDownRefresh":false,
   "navigationBarTitleText": "我的信息",
   "navigationBarBackgroundColor": "#f6f6f6",

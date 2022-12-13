@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "t-result": "tdesign-miniprogram/result/result",
+        "t-button": "tdesign-miniprogram/button/button"
+    },
+    "enablePullDownRefresh":false,
+    "navigationBarTitleText": "成功页面",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f6f6"
+}
