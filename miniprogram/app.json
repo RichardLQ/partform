@@ -6,7 +6,8 @@
         "pages/detail/detail",
         "pages/issue/issue",
         "pages/errs/errs",
-        "pages/succ/succ"
+        "pages/succ/succ",
+        "pages/topic/topic"
     ],
     "window": {
         "backgroundTextStyle": "light",

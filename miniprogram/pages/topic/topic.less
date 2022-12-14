@@ -1,0 +1,67 @@
+.t-cell__title-text{
+    font-weight: 700;
+}
+.tag{
+    margin-left: 10px;
+}
+.index-user{
+    height: 80px;
+    .user-item{
+        display: flex;
+        background-color: #ffffff;
+        .user-pic{
+            flex: 3;
+        }
+        .user-select{
+            flex: 2;
+        }
+    } 
+}
+.index-list{
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+    .list-item{
+        display: flex;
+        .title-content{
+            font-weight: 700;
+            font-size:small
+        }
+        .list-title{
+            flex: 4;
+            display: inline;
+        }
+        .index-price{
+            flex: 1;
+            .price-icon{
+                font-weight: 700;
+            }
+        }
+    }
+    .list-content{
+        padding: 7px 0;
+        .content-view{
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing:1px;
+            //多行显示
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; // 显示2行
+            -webkit-box-orient: vertical;
+            word-break: break-all; 
+        }
+    }
+}
+.block{
+    padding-top: 10rpx;
+}
+
+.index-time{
+    display: inline-block;
+    padding: 5rpx 5rpx 0 0;
+    float: right;
+    font-size: 30rpx;
+    color: #545454;
+}

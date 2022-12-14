@@ -83,7 +83,7 @@
     </view>
     <t-dialog
     visible="{{showWithInput}}"
-    title="带输入框对话框"
+    title="联系方式"
     confirm-btn='确认按钮'
     bind:confirm="closeDialog"
   >

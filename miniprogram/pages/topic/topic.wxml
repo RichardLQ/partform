@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+    <t-divider content="我的帖子" />
+    <t-pull-down-refresh
+    loadingProps="{{loadingProps}}"
+    t-class-indicator="indicator-blue"
+    refreshTimeout="2000"
+    loadingTexts="{{['继续拉哦', '该松手啦', '努力刷新中', '完成~']}}"
+    bind:timeout="handleTimeout"
+    >
+    <view class="pulldown-reflesh__content">
+        <t-skeleton rowCol="{{rowCol}}" t-class="external-class" t-class-col="external-class-col" loading></t-skeleton>
+        <view class="index-list" wx:for="{{partList}}" wx:key="index"  data-index="{{item.id}}" bindtap="handleClick">
+            <view class="list-item">
+                <view class="list-title">
+                <view class="title-content">
+                    {{item.title}} 
+                </view> 
+            </view>
+            <view class="list-price">
+                <span class="price-icon">￥</span> <span>{{item.price}}</span>/<span>{{item.unit}}</span>
+            </view>
+            </view>
+            <view class="list-content">
+                <view class="content-view">
+                    {{item.content}} 
+                </view>
+                <view>
+                    <view class="block">
+                        <t-tag class="tag" wx:for="{{item.tags}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
+                        <view class="index-time" >
+                            2022-12-11 12:12:34 
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    </t-pull-down-refresh>
+
+    <view class="demo-footer">
+        <t-divider content="我也是有底线的" />
+    <t-footer theme="text" copyright="{{copyright}}"></t-footer>
+    </view>
+</view>

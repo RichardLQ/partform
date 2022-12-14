@@ -16,7 +16,7 @@
     <view class="foot-container">
       <view class="foot-cross">
         <view class="cross-label" bindtap="mywallpaper">
-          <i class="iconfont icon-faxian-yanjing"></i>
+          <i class="iconfont icon-faxian-yanjing" bindtap="handleList"></i>
           <view>我的帖子</view>
         </view>
         <view class="cross-label">
@@ -67,13 +67,26 @@
     confirm-btn="我知道了"
     bind:confirm="closeUs"
   />
-  <t-dialog
+  <!-- <t-dialog
     visible="{{dialogContactUs}}"
     title="联系我们"
     content="18004084827"
     confirm-btn="我知道了"
     bind:confirm="closeContac"
-  />
+  /> -->
+  <t-dialog
+    visible="{{dialogContactUs}}"
+    title="联系我们"
+    confirm-btn='我知道了'
+    bind:confirm="closeContac"
+  >
+  <view slot="content" class="dialog-content">
+    <image src="../../static/images/lianxi.jpg" width="72" height="72" shape="round" aria-label="请关注#公众号：深兼数职研究院" />
+    <view>
+        请关注#公众号：<span>深兼数职研究院</span>
+    </view>
+  </view>
+  </t-dialog>
   <t-dialog
     visible="{{dialogNewVersion}}"
     title="新上线功能"

@@ -1,6 +1,7 @@
 {
     "usingComponents": {
-        "t-dialog": "tdesign-miniprogram/dialog/dialog"
+        "t-dialog": "tdesign-miniprogram/dialog/dialog",
+        "t-image": "tdesign-miniprogram/image/image"
     },
     "enablePullDownRefresh":false,
   "navigationBarTitleText": "我的信息",

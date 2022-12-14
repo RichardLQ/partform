@@ -51,6 +51,11 @@ Page({
             url: "/pages/issue/issue",
           })
     },
+    handleList(){
+        wx.navigateTo({
+            url: "/pages/topic/topic",
+          })
+    },
     onLoad() {
 
     },
