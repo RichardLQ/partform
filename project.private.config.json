@@ -4,5 +4,8 @@
         "compileHotReLoad": true,
         "urlCheck": false
     },
+    "useCompilerPlugins": [
+        "typescript"
+    ],
     "projectname": "partform"
 }

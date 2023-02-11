@@ -28,7 +28,7 @@
     >
     <view class="pulldown-reflesh__content">
         <t-skeleton rowCol="{{rowCol}}" t-class="external-class" t-class-col="external-class-col" loading></t-skeleton>
-        <view class="index-list" wx:for="{{partList}}" wx:key="index"  data-index="{{item.id}}" bindtap="handleClick">
+        <view class="index-list" wx:for="{{partLists}}" wx:key="index"  data-index="{{item.id}}" bindtap="handleClick">
             <view class="list-item">
                 <view class="list-title">
                 <view class="title-content">
@@ -45,7 +45,7 @@
                 </view>
                 <view>
                     <view class="block">
-                        <t-tag class="tag" wx:for="{{item.tags}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
+                        <t-tag class="tag" wx:for="{{item.tag}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
                         <view class="index-time" >
                             2022-12-11 12:12:34 
                         </view>

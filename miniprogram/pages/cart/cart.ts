@@ -6,158 +6,76 @@
         doubleColumnsTree: {
             options: [
                 {
-                  label:"东莞",
-                  value:"0",
+                    label:"全市",
+                    value:"0",
+                    options:[
+                        {
+                            label:"全区",
+                            value:"0-0",
+                        },
+                    ]
+                  },
+                {
+                  label:"东莞市",
+                  value:"1",
                   options:[
                       {
                           label:"东城区",
-                          value:"0-0",
+                          value:"1-0",
                       },
                       {
                           label:"莞城区",
-                          value:"0-1",
+                          value:"1-1",
                       },
                       {
                           label:"水乡片区",
-                          value:"0-2",
+                          value:"1-2",
                       },
                   ]
                 },
                 {
-                  label:"深圳",
-                  value:"1",
+                  label:"深圳市",
+                  value:"2",
                   options:[
                       {
                           label:"福田区",
-                          value:"1-0",
+                          value:"2-0",
                       },
                       {
                           label:"龙华区",
-                          value:"1-1",
+                          value:"2-1",
                       },
                       {
                           label:"龙岗区",
-                          value:"1-2",
+                          value:"2-2",
                       },
                       {
                         label:"罗湖区",
-                        value:"1-3",
+                        value:"2-3",
                     },
                     {
                         label:"宝安区",
-                        value:"1-4",
+                        value:"2-4",
                     },
                     {
                         label:"坪山区",
-                        value:"1-5",
+                        value:"2-5",
                     },
                     {
                         label:"光明区",
-                        value:"1-6",
+                        value:"2-6",
                     },
                   ]
                 }
             ],
             value: ['0', '0-0'],
           }, 
-          partList:[
-            {
-                "id":"0",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":60,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","日结"]
-              },
-              {
-                "id":"1",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":60,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","线上兼职","日结"]
-              },
-              {
-                "id":"2",
-                "title":"淘宝京东退换客服",
-                "price":20,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","线上兼职"]
-              },
-              {
-                "id":"3",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":200,
-                "unit":"每天",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","日结"]
-              },
-              {
-                "id":"4",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":30,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶"]
-              },
-              {
-                "id":"5",
-                "title":"淘宝京东退换客服",
-                "price":20,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","线上兼职","日结"]
-              },
-              {
-                "id":"6",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":200,
-                "unit":"每天",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","日结"]
-              },
-              {
-                "id":"7",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":30,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","线上兼职"]
-              },
-              {
-                "id":"8",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":200,
-                "unit":"每天",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","日结"]
-              },
-              {
-                "id":"9",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":30,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","线上兼职"]
-              },
-              {
-                "id":"10",
-                "title":"抖音赋值张贴评论员；一秒一条；一条评论五毛钱；先拿钱后评论，大量要人！",
-                "price":30,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶"]
-              },
-              {
-                "id":"11",
-                "title":"淘宝京东退换客服",
-                "price":20,
-                "unit":"小时",
-                "content":"工作内容： 有痘印就可以做，只需要赋值粘贴，先拿钱后办事，无需任何押金，直接就上手，每秒一个，一个0.5元-1元，进群拿完红包后赋值对应内容点击分享链接进入抖音区粘贴，每天有几百个账户可以提取，先到先得",
-                "tags":["置顶","线上兼职","日结"]
-              },
-        ],
+          city:"",
+          area:"",
+          content:"",
+          page:1,
+          areaList :["city","area"],
+        partLists:[],
         loadingProps: {
             size: '60rpx',
           },
@@ -174,11 +92,28 @@
           ],
     },
     handleTreeSelect(e:any) {
-        console.log(e)
         this.setData({
           'doubleColumnsTree.value': e.detail.value,
         });   
       },
+      confirmSelect(){
+        var options = this.data.doubleColumnsTree.options
+        var values = this.data.doubleColumnsTree.value
+        for (let index = 0; index < options.length; index++) {
+            if(String(index) == values[0]){
+                var temp = this.data.areaList[0]
+                this.setData({[temp]:options[index].label})  
+            }
+            var opt = options[index].options
+            for (let index2 = 0; index2 < opt.length; index2++) {
+                if(opt[index2].value == values[1]){
+                    var temp = this.data.areaList[1]
+                    this.setData({[temp]:opt[index2].label})  
+                }
+            }
+        }  
+        this.getLists(1,this.data.city,this.data.area,this.data.content)
+    },
       handleClick(){
         wx.navigateTo({
             url: "/pages/detail/detail",
@@ -206,8 +141,37 @@
         });
       },
     onLoad() {
+        this.getLists(1,this.data.city,this.data.area,this.data.content)
     },
-
+    getLists(page:any,city: string,area: string,content:any){
+        if(city == "全市"&&area=="全区"){
+            city = ""
+            area = ""
+        }
+        var that = this;
+        wx.request({
+            url: "https://www.sourcandy.cn/part/index/partlist",
+            data: {userid:2,page,pageSize:6,city,area,"search":content},
+            header: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            method: "POST",
+            success(res: any) {
+                  var newArr = res.data.data.map(function(item: any,index: any){
+                      item.tag = JSON.parse(item.tag)
+                      return item
+                  })
+                  that.setData({
+                    partLists: newArr,
+                  })
+            }
+        })
+       
+      },
+      onChange(e:any){
+          this.setData({"content":e.detail.value})
+          this.getLists(1,this.data.city,this.data.area,this.data.content)
+      },
     onReady() { 
     },  
 

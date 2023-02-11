@@ -4,7 +4,7 @@
     <view class="header-container">
         <view class="header-select">
             <t-dropdown-menu>
-                <t-dropdown-item label="地点选择" optionsLayout="tree" options="{{doubleColumnsTree.options}}" value="{{doubleColumnsTree.value}}" bindchange="handleTreeSelect" confirm="confirmSelect" />
+                <t-dropdown-item label="地点选择" optionsLayout="tree" options="{{doubleColumnsTree.options}}" value="{{doubleColumnsTree.value}}" bindchange="handleTreeSelect" bindconfirm="confirmSelect" />
             </t-dropdown-menu>
         </view>
         <view class="header-title">
@@ -13,12 +13,11 @@
             </view>
         </view>
     </view>
-
     <!-- <t-pull-down-refresh loadingProps="{{loadingProps}}" t-class-indicator="indicator-blue" refreshTimeout="2000" loadingTexts="{{['继续拉哦', '该松手啦', '努力刷新中', '完成~']}}" bind:timeout="handleTimeout">
         <view class="pulldown-reflesh__content">
             <t-skeleton rowCol="{{rowCol}}" t-class="external-class" t-class-col="external-class-col" loading></t-skeleton> -->
             <view class="content-item">
-                <view class="index-list" wx:for="{{partList}}" wx:key="index" data-index="{{item.id}}" bindtap="handleClick">
+                <view class="index-list" wx:for="{{partLists}}" wx:key="index" data-index="{{item.id}}" bindtap="handleClick">
                     <view class="list-item">
                         <view class="list-title">
                             <view class="title-content">
@@ -35,7 +34,7 @@
                         </view>
                         <view>
                             <view class="block">
-                                <t-tag class="tag" wx:for="{{item.tags}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
+                                <t-tag class="tag" wx:for="{{item.tag}}" wx:key="items" wx:for-item="items" theme="primary">{{items}}</t-tag>
                             </view>
                         </view>
                     </view>
