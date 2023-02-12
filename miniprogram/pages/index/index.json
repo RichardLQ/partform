@@ -6,7 +6,8 @@
     "t-divider": "tdesign-miniprogram/divider/divider",
     "t-sticky": "tdesign-miniprogram/sticky/sticky",
     "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
-    "t-tag": "tdesign-miniprogram/tag/tag"
+    "t-tag": "tdesign-miniprogram/tag/tag",
+    "t-toast": "tdesign-miniprogram/toast/toast"
   },
   "enablePullDownRefresh":false,
   "navigationBarTitleText": "龙猫兼职",

@@ -1,4 +1,7 @@
 // const util = require('../../utils/util.js');
+
+import Textarea from "../../miniprogram_npm/tdesign-miniprogram/textarea/textarea";
+
 // const api = require('../../utils/api.js');
 Page({
   data: {
@@ -26,7 +29,7 @@ Page({
     var that = this;
     wx.request({
         url: "https://www.sourcandy.cn/part/index/hotlist",
-        data: {"userid":2},
+        data: {"userid":3},
         header: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -41,12 +44,58 @@ Page({
               })
         }
     })
-   
   },
-  handleClick(){
-    wx.navigateTo({
-        url: "/pages/detail/detail",
-      })
+  pays(){
+    let openid = wx.getStorageSync('openid')  
+    let that = this 
+    wx.request({
+        url: "https://www.sourcandy.cn/part/index/order",
+        data: {"openid":openid,"amount":1},
+        header: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        method: "GET",
+        success(res: any) {
+            wx.requestPayment({
+                timeStamp: res.data.data.timeStamp,
+                nonceStr: res.data.data.nonceStr,
+                package: res.data.data.package,
+                signType: res.data.data.signType,
+                paySign: res.data.data.paySign,
+                success (res) { 
+                    console.log(res)
+                    Toast({
+                        context: that,
+                        selector: '#t-toast',
+                        message: '支付成功',
+                        icon: 'success',
+                        direction: 'column',
+                      });
+                },
+                fail (res) { 
+                    Toast({
+                        context: that,
+                        selector: '#t-toast',
+                        message: '支付失败',
+                        theme: 'fail',
+                        direction: 'column',
+                      });
+                }
+            }) // wx.requestPayment
+        }
+    })
+    
+    
+  },
+  handleClick(e:any){
+      if (e.currentTarget.dataset.buy){
+        wx.navigateTo({
+            url: "/pages/detail/detail",
+        })
+      }else{
+          this.pays()
+      }
+   
 },
   handleTimeout() {
     wx.showToast({

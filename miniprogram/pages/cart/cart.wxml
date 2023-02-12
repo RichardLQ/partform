@@ -17,7 +17,7 @@
         <view class="pulldown-reflesh__content">
             <t-skeleton rowCol="{{rowCol}}" t-class="external-class" t-class-col="external-class-col" loading></t-skeleton> -->
             <view class="content-item">
-                <view class="index-list" wx:for="{{partLists}}" wx:key="index" data-index="{{item.id}}" bindtap="handleClick">
+                <view class="index-list" wx:for="{{partLists}}" wx:key="index" data-buy="{{item.buy}}" data-index="{{item.id}}" bindtap="handleClick">
                     <view class="list-item">
                         <view class="list-title">
                             <view class="title-content">

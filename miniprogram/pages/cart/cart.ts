@@ -114,10 +114,14 @@
         }  
         this.getLists(1,this.data.city,this.data.area,this.data.content)
     },
-      handleClick(){
-        wx.navigateTo({
-            url: "/pages/detail/detail",
-          })
+      handleClick(e:any){
+        if (e.currentTarget.dataset.buy){
+            wx.navigateTo({
+                url: "/pages/detail/detail",
+            })
+          }else{
+              this.pays()
+          }
     },
       onToTop(e:any) {
         console.log('backToTop', e);
@@ -167,6 +171,40 @@
             }
         })
        
+      },
+      pays(){
+        let openid = wx.getStorageSync('openid')  
+        let that = this 
+        wx.request({
+            url: "https://www.sourcandy.cn/part/index/order",
+            data: {"openid":openid,"amount":1},
+            header: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            method: "GET",
+            success(res: any) {
+                wx.requestPayment({
+                    timeStamp: res.data.data.timeStamp,
+                    nonceStr: res.data.data.nonceStr,
+                    package: res.data.data.package,
+                    signType: res.data.data.signType,
+                    paySign: res.data.data.paySign,
+                    success (res) { 
+                        console.log(res)
+                        Toast({
+                            context: that,
+                            selector: '#t-toast',
+                            message: '支付成功',
+                            icon: 'check-circle',
+                            direction: 'column',
+                          });
+                    },
+                    fail (res) { 
+                        console.log(res)
+                    }
+                }) // wx.requestPayment
+            }
+        })
       },
       onChange(e:any){
           this.setData({"content":e.detail.value})

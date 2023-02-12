@@ -1,4 +1,5 @@
 {
+    "lazyCodeLoading": "requiredComponents",
     "pages": [
         "pages/index/index",
         "pages/my/my",
@@ -40,6 +41,5 @@
                 "selectedIconPath": "/static/images/wode_active.png"
             }
         ]
-    },
-    "lazyCodeLoading": "requiredComponents"
+    }
 }

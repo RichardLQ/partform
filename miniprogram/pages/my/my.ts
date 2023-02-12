@@ -34,6 +34,7 @@ Page({
         wx.getUserProfile({
             desc: '获取用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
             success: (res) => {
+                console.log(res)
             wx.setStorageSync('userInfo', JSON.stringify(res.userInfo))
             this.setData({
                 users:{
