@@ -26,10 +26,11 @@ Page({
     this.getList()
   },
   getList(){
-    var that = this;
+    let that = this;
+    let openid = wx.getStorageSync('openid')  
     wx.request({
         url: "https://www.sourcandy.cn/part/index/hotlist",
-        data: {"userid":3},
+        data: {"openid":openid},
         header: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
